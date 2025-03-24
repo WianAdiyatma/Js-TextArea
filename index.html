@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Area</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #text-area {
+        font-size: 15px;
+        border-radius: 10px;
+        padding: 10px;
+        resize: none;
+        width: 400px;
+        height: 100px;
+      }
+
+      #character-count {
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <textarea
+        name="textarea"
+        id="text-area"
+        maxlength="10"
+        placeholder="insert your text here..."
+        autofocus
+      ></textarea>
+      <span id="character-counter"></span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
